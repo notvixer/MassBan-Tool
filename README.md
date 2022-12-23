@@ -11,11 +11,5 @@ About 65+ bans per second.
   
 ## Process
   
-- **Enter All Of The Ids Of The Guild Members ( I Will Make A Tool For That InFuture )**  
 - **Run `main.py`**  
-- **Type The Bot Token When Asked**  
-- **Type The Guild Id You Want To Turn Dead, Your Bot Must Be In It!**  
-- **Done**  
-  
-  
 
