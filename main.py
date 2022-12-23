@@ -15,7 +15,7 @@ GUILD = int(input("GUILD ID TO MASSBAN:  "))
 async def ban(session, mem):
   async with session.put("https://discord.com/api/v10/guilds/%d/bans/%d" % (GUILD, int(mem))) as resp:
     if resp.status in (200, 201, 204):
-      print("[\u001b[32;1mBANNED\u001b[0m] \u001b[31;1mSUCCESSFULLY ELIMINATED %s\u001b[0m" % (nigga))
+      print("[\u001b[32;1mBANNED\u001b[0m] \u001b[31;1mSUCCESSFULLY ELIMINATED %s\u001b[0m" % (mem))
     elif resp.status == 429:
       again = await resp.json()
       print("[\u001b[31;1mRATELIMITED\u001b[0m] \u001b[34;1mRATELIMITED, RETRYING IN %d\u001b[0m" % (again['retry_after']))
